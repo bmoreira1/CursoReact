@@ -1,20 +1,33 @@
-//wile = enquanto.
+//Switch 
+document.write("</br>Escolha o seu pedido: </br></br>");
+document.write("</br>1 = Cachorro Quente </br></br>");
+document.write("</br>2 = Refrigerante </br></br>");
+document.write("</br>3 = Hamburguer</br></br>");
+document.write("</br>4 = Suco de Limão</br></br>");
 
-x = 0 
+function pedir(){
 
-while (x<10) {
-    document.write ("</br> O valor de x: " + x);
+    x = prompt("o que deseja pedir? ");
 
-    x++
+    switch(x){
+
+        case '1':
+            alert("Seu pedido é Cachorro Quente! ");
+            brake;
+            
+        case '2':
+            alert ("Seu pedido é Refrigerante! ");
+            brake;
+        case '3':
+            alert ("Seu pedido é Hamburguer! ");
+            brake;
+
+        case '4':
+            alert ("Seu pedido é Suco de Limão! ");
+            brake;
+        default:
+            alert("Ops. Não temos essa opção!");
+            break;
+
+    }
 }
-
-document.write("</br></br></br> O x está valendo: "+ x + "</br></br>");
-
-//for = Para
-
-for(a = 0; a <10; a++){
-
-    document.write("</br> O valor de A: " + a);
-}
-
-document.write("</br></br></br> o A esta valendo: "+ a +"</br></br>");
