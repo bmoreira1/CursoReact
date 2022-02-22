@@ -1,25 +1,18 @@
-// função entrar 
+//wile = enquanto.
 
-function entrar(){
+x = 0 
 
-    var area = document.getElementById("area"); 
-    var texto = prompt('Digite seu nome');
+while (x<10) {
+    document.write ("</br> Ovalor de x: " + x);
 
-    if (texto == '' || texto == null){
-        alert('Digite seu nome novamente!');
-        area.innerHTML = 'Bem vindo... ' + texto;
-    } else {
-        area.innerHTML = 'Bem vindo! ' + texto;
-    }
-
-    area.innerHTML = 'Bem vindo ' + texto;
-
+    x++
 }
 
-function entrar2(nome){
+document.write("</br></br></br> O x está valendo: "+ x + "</br></br>");
 
-    var area = document.getElementById('area2'); 
-    var texto = prompt('Digite seu sobrenome');
-    area.innerHTML = nome + ' ' + texto;
+//for = Para
 
+for(a = 0; a <10; a++){
+
+    document.write("</br> O valor de A: " + a);
 }
